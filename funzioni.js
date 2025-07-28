@@ -107,12 +107,10 @@ setTimeout(() => {
 //# Tempo scaduto!
 
 function contoAllaRovescia(n) {
-    let contatore = n;
-
     const id = setInterval(() => {
-        if (contatore > 0) {
-            console.log(contatore);
-            contatore--;
+        if (n > 0) {
+            console.log(n);
+            n--;
         } else {
             console.log("Tempo scaduto!");
             clearInterval(id);
@@ -120,6 +118,7 @@ function contoAllaRovescia(n) {
     }, 1000);
 }
 
+contoAllaRovescia(10);
 
 
 //*Creare una funzione che esegue una sequenza di operazioni con ritardi
